@@ -1,0 +1,85 @@
+.portfolio__container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.portfolio__filter {
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.portfolio__content {
+  margin-top: 300px;
+}
+
+.portfolio__content__title {
+  text-align: center;
+  margin: 50px 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+}
+
+.portfolio__content__cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(400px, 700px));
+  grid-row-gap: 50px;
+}
+
+.project__tags ul {
+  display: flex;
+}
+
+.project__links ul {
+  display: flex;
+}
+
+.project__links li {
+  margin: 2rem 0.5rem 0 0.5rem;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  background: linear-gradient(to right, #4458dc 0%, #854fee 100%),
+    radial-gradient(circle at top left, #4458dc, #854fee);
+  color: #f6faff;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.project__tags li {
+  padding: 0 6px;
+  display: inline-block;
+  margin: 0.3rem;
+  border: 1px solid #b051bd;
+  padding: 0.5rem;
+  color: #263e57;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  border-radius: 2px;
+}
+
+.MuiCardActions-root.MuiCardActions-spacing {
+  display: flex;
+  flex-direction: column;
+}
+
+.MuiPaper-root.MuiCard-root.makeStyles-root-1.MuiPaper-elevation1.MuiPaper-rounded {
+  position: relative;
+}
+
+.project__category {
+  position: absolute;
+  z-index: 100;
+  color: #fff;
+  padding: 8px;
+  background-color: rgb(40, 44, 55);
+  right: 3px;
+  top: 12px;
+  transform: rotate(25deg);
+  border-radius: 5px;
+  font-size: 19px;
+}

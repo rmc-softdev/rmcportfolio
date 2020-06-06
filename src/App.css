@@ -1,38 +1,184 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  margin: 0px;
+  font-family: "Roboto Mono", "monospace", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", " !default";
+  box-sizing: border-box;
+  background: #f9f9fb;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+}
+
+.showcase__portfolio {
+  color: #fff;
+  padding: 6px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 46px;
+  outline: none !important;
   text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background: linear-gradient(to right, #4458dc 0%, #854fee 100%),
+    radial-gradient(circle at top left, #4458dc, #854fee);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.showcase__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.showcase__content__img {
+  max-width: 700px;
+  max-height: 700px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.showcase__content__img img {
+  width: 700px;
+  min-height: auto;
+}
+
+.showcase__content__infos {
+  max-width: 500px;
+  position: relative;
+}
+
+.separator {
+  background-color: rgb(105, 49, 225);
+  box-sizing: border-box;
+  color: rgb(42, 42, 51);
+  font-family: "Open Sans", Gotham, gotham, Tahoma, Geneva, sans-serif;
+  font-size: 15px;
+  height: 2px;
+  line-height: 22.5px;
+  text-align: center;
+  width: 140px;
+  margin: 50px auto;
+}
+
+.showcase__cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.showcase__cards__container {
+  display: grid;
+  grid-column-gap: 30px;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+}
+
+.showcase__cards__card {
+  background-color: rgb(255, 255, 255);
+  border-bottom-color: rgb(42, 42, 51);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-width: 0px;
+  border-image-slice: 100%;
+  border-image-width: 1;
+  border-left-color: rgb(42, 42, 51);
+  border-right-color: rgb(42, 42, 51);
+  border-right-width: 0px;
+  border-top-color: rgb(42, 42, 51);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-width: 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 0px;
+  box-sizing: border-box;
+  color: rgb(42, 42, 51);
+  font-size: 15px;
+  line-height: 22.5px;
+  max-width: 100%;
+  text-align: center;
+  transform: none;
+  transition-delay: 0s;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  -moz-box-flex: 2;
+  height: 350px;
+  margin-bottom: 90px;
+  position: relative;
+}
+
+.showcase__cards__card i {
+  background: linear-gradient(to right, #4458dc 0%, #854fee 100%),
+    radial-gradient(circle at top left, #4458dc, #854fee);
+  border-radius: 50%;
+  padding: 5px;
+  color: #fff;
+}
+
+.title {
+  font-family: "Rubik", sans-serif;
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+.showcase__content__infos h5 {
+  font-size: 19px;
+  margin-bottom: 7px;
+}
+
+.showcase__content__infos p {
+  margin-bottom: 7px;
+}
+
+.showcase__cards__card:hover {
+  transform: scale(1.02) translate(0px, -8px);
+  transition: all 300ms ease-in-out 0s;
+}
+
+.bracket {
+  font-size: 270px;
+  position: absolute;
+  top: 120px;
+  left: -15px;
+  color: #8a2be2;
+  display: none;
+}
+
+.showcase__cards__card__tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card__tags__content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card__tags__content p {
+  background-color: #854fee;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  margin: 8px 0;
+  padding: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.showcase__cards__card__tags {
+  display: flex;
+}
+
+@media only screen and (max-width: 1300px) {
+  .showcase__cards__container {
+    grid-template-columns: repeat(3, minmax(300px, 500px));
   }
 }
