@@ -4,7 +4,7 @@ const SkillsCard = () => {
   return (
     <div className="showcase__cards" style={{ position: "relative" }}>
       <img
-        src="https://i.ibb.co/j3bkqVf/curvas-1.png"
+        // src="https://i.ibb.co/j3bkqVf/curvas-1.png"
         style={{ position: "absolute", right: "400px", top: "-150px" }}
         alt=""
       />
