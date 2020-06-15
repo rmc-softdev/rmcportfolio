@@ -27,6 +27,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(400px, 700px));
   grid-row-gap: 50px;
+  justify-items: center;
 }
 
 .project__tags ul {

@@ -1,37 +1,218 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const SkillsCard = () => {
+  const listVariants = {
+    hover: {
+      scale: 1.1,
+      boxShadow: "0px 0px 8px rgba(255,255,255)",
+      textShadow: "0 0 10px #FFFFFF",
+      transition: {
+        duration: 0.3,
+        yoyo: Infinity,
+      },
+    },
+  };
+
+  const cardsVariants = {
+    hidden: {
+      x: "-2000px",
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        x: {
+          type: "spring",
+          delay: 3.3,
+          mass: 0.9,
+          ease: "easeInOut",
+        },
+      },
+    },
+    exit: {
+      x: "-100vw",
+      opacity: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
-    <div className="showcase__cards" style={{ position: "relative" }}>
-      <img
-        // src="https://i.ibb.co/j3bkqVf/curvas-1.png"
-        style={{ position: "absolute", right: "400px", top: "-150px" }}
-        alt=""
-      />
-      <div className="showcase__cards__container">
-        <div className="showcase__cards__card">
-          <h1 style={{ marginTop: "15px" }}> Frontend</h1>
-          <div className="bracket">
-            <span> {`{`} </span>
+    <>
+      <motion.div
+        variants={cardsVariants}
+        initial="hidden"
+        animate="visible"
+        className="skills__slogan"
+        style={{ textAlign: "center" }}
+        exit="exit"
+      >
+        <h1> What I have been doing lately </h1>
+        <div className="separator"></div>
+      </motion.div>
+      <motion.div
+        variants={cardsVariants}
+        initial="hidden"
+        animate="visible"
+        className="showcase__cards"
+        style={{ position: "relative" }}
+        exit="exit"
+      >
+        <img
+          // src="https://i.ibb.co/j3bkqVf/curvas-1.png"
+          style={{ position: "absolute", right: "400px", top: "-150px" }}
+          alt=""
+        />
+        <div className="showcase__cards__container">
+          <div className="showcase__cards__card">
+            <h1 style={{ marginTop: "15px" }}> Frontend</h1>
+            <div className="bracket">
+              <span> {`{`} </span>
+            </div>
+            <div className="showcase__cards__card__tags">
+              <div className="card__tags__content">
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
+                  style={{ cursor: "pointer" }}
+                >
+                  {" "}
+                  React{" "}
+                </motion.p>
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
+                  style={{ cursor: "pointer" }}
+                >
+                  {" "}
+                  Redux
+                </motion.p>
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
+                  style={{ cursor: "pointer" }}
+                >
+                  Javascript
+                </motion.p>
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
+                  style={{ cursor: "pointer" }}
+                >
+                  SASS
+                </motion.p>
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
+                  style={{ cursor: "pointer" }}
+                >
+                  HTML/CSS
+                </motion.p>
+              </div>
+            </div>
           </div>
-          <div className="showcase__cards__card__tags">
-            {/* <div className="icons">
-              <i class="fas fa-share"></i>
-              <i class="fas fa-thumbtack"></i>
-              <i class="far fa-check-circle"></i>
-            </div> */}
-            <div className="card__tags__content">
-              <p>React </p>
-              <p> Javascript </p>
-              <p> SASS</p>
+          <div className="showcase__cards__card">
+            <h1 style={{ marginTop: "15px" }}> Backend</h1>
+            <div className="bracket">
+              <span> {`{`} </span>
+            </div>
+            <div className="showcase__cards__card__tags">
+              <div className="card__tags__content">
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
+                  style={{ cursor: "pointer" }}
+                >
+                  Node JS
+                </motion.p>
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
+                  style={{ cursor: "pointer" }}
+                >
+                  MongoDB
+                </motion.p>
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
+                  style={{ cursor: "pointer" }}
+                >
+                  Express
+                </motion.p>
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
+                  style={{ cursor: "pointer" }}
+                >
+                  REST API
+                </motion.p>
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
+                  style={{ cursor: "pointer" }}
+                >
+                  Authentication
+                </motion.p>
+              </div>
+            </div>
+          </div>
+
+          <div className="showcase__cards__card">
+            <h1 style={{ marginTop: "15px" }}> More Skills</h1>
+            <div className="bracket">
+              <span> {`{`} </span>
+            </div>
+            <div className="showcase__cards__card__tags">
+              <div className="card__tags__content">
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
+                  style={{ cursor: "pointer" }}
+                >
+                  Hooks
+                </motion.p>
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
+                  style={{ cursor: "pointer" }}
+                >
+                  Context API
+                </motion.p>
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
+                  style={{
+                    cursor: "pointer",
+                    display: "flex",
+                    flexDirection: "column",
+                  }}
+                >
+                  <span>Pixel Perfect CSS skills</span>
+                </motion.p>
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
+                  style={{ cursor: "pointer" }}
+                >
+                  SEO
+                </motion.p>
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
+                  style={{ cursor: "pointer" }}
+                >
+                  Bachelor's in STEM
+                </motion.p>
+              </div>
             </div>
           </div>
         </div>
-
-        <div className="showcase__cards__card">Backend</div>
-        <div className="showcase__cards__card">Skills</div>
-      </div>
-    </div>
+      </motion.div>
+    </>
   );
 };
 

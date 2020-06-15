@@ -1,23 +1,27 @@
 import React, { Suspense } from "react";
 
 import SkillsCard from "./components/SkillsCard";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Route, Switch, useLocation } from "react-router-dom";
+
 import LoadingSpinner from "./utils/LoadingSpinner";
+import { AnimatePresence } from "framer-motion";
 
 import "./App.css";
 
-const Home = React.lazy(() => import("./components/Home"));
+const HomeContent = React.lazy(() => import("./components/HomeContent"));
 const PortfolioShowCase = React.lazy(() =>
   import("./components/PortfolioShowCase")
 );
 
 const App = () => {
+  const location = useLocation();
+
   return (
-    <>
-      <Router>
+    <AnimatePresence exitBeforeEnter>
+      <Switch location={location} key={location.key}>
         <Route path="/" exact>
           <Suspense fallback={<LoadingSpinner asOverlay />}>
-            <Home />
+            <HomeContent />
             <SkillsCard />
           </Suspense>
         </Route>
@@ -26,8 +30,8 @@ const App = () => {
             <PortfolioShowCase />
           </Suspense>
         </Route>
-      </Router>
-    </>
+      </Switch>
+    </AnimatePresence>
   );
 };
 

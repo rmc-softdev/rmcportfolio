@@ -182,8 +182,51 @@ a {
   display: flex;
 }
 
+/* 
 @media only screen and (max-width: 1300px) {
   .showcase__cards__container {
     grid-template-columns: repeat(3, minmax(300px, 500px));
+  }
+} */
+
+@media only screen and (max-width: 1250px) {
+  .showcase__content {
+    flex-direction: column;
+    height: auto;
+  }
+  .showcase__content__img {
+    margin-top: 30px;
+  }
+  .showcase__content__infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .showcase__cards__container {
+    grid-template-columns: repeat(3, minmax(200px, 300px));
+  }
+  .icons {
+    position: relative;
+    margin-top: 35px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .showcase__content__img {
+    max-width: 350px;
+    max-height: 350px;
+  }
+
+  .showcase__content__img img {
+    max-width: 350px;
+    max-height: 350px;
+  }
+  .showcase__cards__container {
+    grid-template-columns: 300px;
+  }
+  .icons {
+    position: relative;
+    margin-top: 35px;
   }
 }

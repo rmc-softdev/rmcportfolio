@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 import DynamicFilter from "./DynamicFilter";
 import ProjectCard from "./ProjectCard";
@@ -42,7 +43,26 @@ const PortfolioShowCase = () => {
 
   return (
     <>
-      <div className="portfolio__container">
+      <motion.div
+        className="portfolio__container"
+        initial={{
+          x: "-100vw",
+        }}
+        animate={{
+          x: 0,
+        }}
+        transition={{
+          duration: 0.3,
+          ease: "easeInOut",
+        }}
+        exit={{
+          x: "100vw",
+          transition: {
+            duration: 0.5,
+            ease: "easeInOut",
+          },
+        }}
+      >
         <div className="portfolio__filter">
           <DynamicFilter currentStack={currentStack} />
         </div>
@@ -88,7 +108,7 @@ const PortfolioShowCase = () => {
             <ProjectCard />
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

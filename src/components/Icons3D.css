@@ -37,6 +37,12 @@
   text-align: center;
 }
 
+.icons a .layer span.far {
+  font-size: 40px;
+  line-height: 55px;
+  text-align: center;
+}
+
 .icons a:hover .layer span:nth-child(1) {
   opacity: 0.2;
 }

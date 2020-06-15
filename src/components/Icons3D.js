@@ -36,6 +36,16 @@ const Icons3D = () => {
           </div>
           <div className="text">Linkedin</div>
         </a>
+        <a href="#">
+          <div className="layer">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span className="far fa-envelope"></span>
+          </div>
+          <div className="text">rmcsoftdev@gmail.com</div>
+        </a>
       </div>
     </>
   );

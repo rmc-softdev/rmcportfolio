@@ -1,3 +1,7 @@
+import React, { useState, useEffect, useRef } from "react";
+import { CSSTransition } from "react-transition-group";
+import { motion, useCycle, AnimatePresence } from "framer-motion";
+
 import "./DynamicFilter.css";
 import { ReactComponent as CaretIcon } from "./icons/caret.svg";
 import { ReactComponent as CogIcon } from "./icons/cog.svg";
@@ -8,12 +12,65 @@ import { ReactComponent as ReactIcon } from "./icons/React-icon.svg";
 import { ReactComponent as FullStackIcon } from "./icons/nodejs.svg";
 import { ReactComponent as JSIcon } from "./icons/javascript.svg";
 
-import React, { useState, useEffect, useRef } from "react";
-import { CSSTransition } from "react-transition-group";
+const svgVariants = {
+  animateDown: {
+    scale: 1.3,
+    rotate: 0,
+    y: 3,
+    transition: {
+      rotate: {
+        duration: 0.5,
+      },
+      yoyo: Infinity,
+      ease: "easeInOut",
+      duration: 0.5,
+    },
+  },
+  animateUp: {
+    rotate: 180,
+    y: -3,
+    transition: {
+      rotate: {
+        duration: 0.5,
+      },
+      yoyo: Infinity,
+      ease: "easeInOut",
+      duration: 0.5,
+    },
+  },
+};
+
+const pathVariants = {
+  initial: {
+    opacity: 0,
+    pathLength: 0,
+  },
+  animate: {
+    opacity: 1,
+    pathLength: 1,
+    transition: {
+      duration: 5,
+      ease: "easeInOut",
+    },
+  },
+};
+
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: "easeInOut",
+    },
+  },
+};
 
 const DynamicFilter = (props) => {
   const [stack, setStack] = useState("Menu");
-
+  const [showDropDown, setShowDropDown] = useState(false);
   props.currentStack(stack);
 
   const changeStack = (name) => {
@@ -49,8 +106,15 @@ const DynamicFilter = (props) => {
         </span>
       </h4>
       <Navbar>
-        <NavItem icon={<CaretIcon />}>
-          <DropdownMenu changeStack={changeStack}></DropdownMenu>
+        <NavItem
+          setShowDropDown={setShowDropDown}
+          showDropDown={showDropDown}
+          icon={<CaretIcon />}
+        >
+          <DropdownMenu
+            showDropDown={showDropDown}
+            changeStack={changeStack}
+          ></DropdownMenu>
         </NavItem>
       </Navbar>
     </>
@@ -67,12 +131,26 @@ const Navbar = (props) => {
 
 const NavItem = (props) => {
   const [open, setOpen] = useState(false);
-
+  const [animation, cycleAnimation] = useCycle("animateDown", "animateUp");
   return (
     <li className="nav-item">
-      <span className="icon-button" onClick={() => setOpen(!open)}>
-        {props.icon}
-      </span>
+      <motion.span
+        className="icon-button"
+        onClick={() => {
+          setOpen(!open);
+          cycleAnimation();
+          props.setShowDropDown(!props.showDropDown);
+        }}
+        whileTap={{ scale: 0.8 }}
+      >
+        <motion.div
+          variants={svgVariants}
+          initial="initial"
+          animate={animation}
+        >
+          {props.icon}
+        </motion.div>
+      </motion.span>
 
       {open && props.children}
     </li>
@@ -84,7 +162,6 @@ const DropdownMenu = (props) => {
   const [menuHeight, setMenuHeight] = useState(null);
   const dropdownRef = useRef(null);
   const [stack, setStack] = useState("Menu");
-
   props.changeStack(stack);
 
   useEffect(() => {
@@ -113,7 +190,14 @@ const DropdownMenu = (props) => {
   };
 
   return (
-    <div className="dropdown" style={{ height: menuHeight }} ref={dropdownRef}>
+    <motion.div
+      className="dropdown"
+      style={{ height: menuHeight }}
+      ref={dropdownRef}
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
       <CSSTransition
         in={activeMenu === "main"}
         timeout={500}
@@ -158,7 +242,7 @@ const DropdownMenu = (props) => {
           </DropdownItem>
         </div>
       </CSSTransition>
-    </div>
+    </motion.div>
   );
 };
 
