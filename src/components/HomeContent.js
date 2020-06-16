@@ -64,8 +64,10 @@ const svgVariants = {
       ease: "easeInOut",
       scale: {
         delay: 4,
-        duration: 3,
+        duration: 1.7,
         ease: "easeInOut",
+        yoyo: Infinity,
+        repeatDelay: 2,
       },
     },
   },
@@ -120,7 +122,7 @@ const Home = () => {
             to date with the latest trends in the industry, always looking
             foward to apply such technologies. Don't take my word for granted,
             for I have learned a whole new library just to make the animations
-            you're seeing possible with React.
+            you're seeing here possible with React.
           </p>
           <motion.div whileTap={{ scale: 1.1 }}>
             <Link to="/portfolio">

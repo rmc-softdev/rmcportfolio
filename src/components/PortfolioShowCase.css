@@ -32,6 +32,7 @@
 
 .project__tags ul {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .project__links ul {
@@ -72,6 +73,10 @@
   position: relative;
 }
 
+.MuiTypography-colorTextSecondary {
+  color: rgba(0, 0, 0, 0.84) !important;
+}
+
 .project__category {
   position: absolute;
   z-index: 100;
@@ -79,7 +84,7 @@
   padding: 8px;
   background-color: rgb(40, 44, 55);
   right: 3px;
-  top: 12px;
+  top: 16px;
   transform: rotate(25deg);
   border-radius: 5px;
   font-size: 19px;

@@ -7,6 +7,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
@@ -17,7 +18,7 @@ const useStyles = makeStyles({
   },
 });
 
-const ProjectCard = ({ category, description, name }) => {
+const ProjectCard = ({ category, description, name, tags, links, image }) => {
   const classes = useStyles();
 
   return (
@@ -26,7 +27,7 @@ const ProjectCard = ({ category, description, name }) => {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="https://i.ibb.co/MM3Zhmx/download.png"
+          image={image || "https://i.ibb.co/GswL4gn/index.png"}
           title="Contemplative Reptile"
         />
         <CardContent>
@@ -40,16 +41,46 @@ const ProjectCard = ({ category, description, name }) => {
       </CardActionArea>
       <CardActions>
         <div className="project__tags">
-          <ul>
-            <li>React</li>
-            <li>Javascript</li>
-          </ul>
+          <ul>{tags && tags.map((el) => <li> {el} </li>)}</ul>
         </div>
         <div className="project__links">
           <ul>
-            <li>Github</li>
-            <li>View Demo</li>
-            <li>View Explanation</li>
+            {links?.github && (
+              <li>
+                <a href={links.github} style={{ color: "#fff" }}>
+                  {" "}
+                  Github
+                </a>
+              </li>
+            )}
+
+            {links?.githubb && (
+              <li>
+                <a href={links.github} style={{ color: "#fff" }}>
+                  {" "}
+                  Github (backend)
+                </a>
+              </li>
+            )}
+
+            {links?.githubf && (
+              <li>
+                <a href={links.github} style={{ color: "#fff" }}>
+                  {" "}
+                  Github (frontend)
+                </a>
+              </li>
+            )}
+
+            {links?.demo && (
+              <li>
+                <a href={links.demo} style={{ color: "#fff" }}>
+                  {" "}
+                  View Demo
+                </a>
+              </li>
+            )}
+            {/* <li>View Explanation</li> */}
           </ul>
         </div>
       </CardActions>

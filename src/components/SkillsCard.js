@@ -205,7 +205,7 @@ const SkillsCard = () => {
                   whileHover="hover"
                   style={{ cursor: "pointer" }}
                 >
-                  Bachelor's in STEM
+                  Bachelor in Physics
                 </motion.p>
               </div>
             </div>
