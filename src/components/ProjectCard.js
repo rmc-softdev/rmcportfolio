@@ -47,16 +47,24 @@ const ProjectCard = ({ category, description, name, tags, links, image }) => {
           <ul>
             {links?.github && (
               <li>
-                <a href={links.github} style={{ color: "#fff" }}>
+                <a
+                  href={links.github}
+                  target="_blank"
+                  style={{ color: "#fff" }}
+                >
                   {" "}
-                  Github
+                  View Code
                 </a>
               </li>
             )}
 
             {links?.githubb && (
               <li>
-                <a href={links.github} style={{ color: "#fff" }}>
+                <a
+                  href={links.github}
+                  target="_blank"
+                  style={{ color: "#fff" }}
+                >
                   {" "}
                   Github (backend)
                 </a>
@@ -65,7 +73,11 @@ const ProjectCard = ({ category, description, name, tags, links, image }) => {
 
             {links?.githubf && (
               <li>
-                <a href={links.github} style={{ color: "#fff" }}>
+                <a
+                  href={links.github}
+                  target="_blank"
+                  style={{ color: "#fff" }}
+                >
                   {" "}
                   Github (frontend)
                 </a>
@@ -74,7 +86,7 @@ const ProjectCard = ({ category, description, name, tags, links, image }) => {
 
             {links?.demo && (
               <li>
-                <a href={links.demo} style={{ color: "#fff" }}>
+                <a href={links.demo} target="_blank" style={{ color: "#fff" }}>
                   {" "}
                   View Demo
                 </a>

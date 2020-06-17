@@ -109,6 +109,11 @@ const Home = () => {
           </motion.div>
           <h4 className="title"> Rafael Marques</h4>
           <h5 style={{ fontWeight: "500" }}> Software Developer</h5>
+          {/* <div className="logo" style={{ top: "27px", right: "220px" }}>
+            <Link to="/">
+              <img src="https://i.ibb.co/tsLPThB/Logo-1-1.png" alt="" />
+            </Link>
+          </div> */}
           <p
             style={{
               fontFamily: "roboto,Noto Sans Myanmar UI,arial,sans-serif",

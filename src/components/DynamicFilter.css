@@ -76,7 +76,7 @@ a {
 
 .dropdown {
   position: absolute;
-  top: 162px;
+  top: 132px;
   width: 200px;
   margin-top: 7px;
   background-color: var(--bg);

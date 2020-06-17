@@ -182,6 +182,14 @@ a {
   display: flex;
 }
 
+.logo {
+  position: absolute;
+}
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
 /* 
 @media only screen and (max-width: 1300px) {
   .showcase__cards__container {
