@@ -36,7 +36,7 @@ const Icons3D = () => {
           </div>
           <div className="text">Linkedin</div>
         </a>
-        <a href="#">
+        {/* <a href="#">
           <div className="layer">
             <span></span>
             <span></span>
@@ -45,7 +45,7 @@ const Icons3D = () => {
             <span className="far fa-envelope"></span>
           </div>
           <div className="text">rmcsoftdev@gmail.com</div>
-        </a>
+        </a> */}
       </div>
     </>
   );
