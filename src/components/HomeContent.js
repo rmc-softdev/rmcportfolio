@@ -129,7 +129,10 @@ const Home = () => {
             for I have learned a whole new library just to make the animations
             you're seeing here possible with React.
           </p>
-          <motion.div whileTap={{ scale: 1.1 }}>
+          <motion.div
+            style={{ width: "fit-content" }}
+            whileTap={{ scale: 1.1 }}
+          >
             <Link to="/portfolio">
               {" "}
               <span className="showcase__portfolio">

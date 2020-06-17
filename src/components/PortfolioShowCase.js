@@ -109,25 +109,6 @@ const PortfolioShowCase = () => {
         <ProjectCard
           tags={[
             tags.react,
-            tags.hooks,
-            tags.animations,
-            tags.css,
-            tags.js,
-            tags.framer,
-          ]}
-          links={{
-            github:
-              "https://github.com/rmc-softdev/Pizza-Joint-animation-showcase-",
-          }}
-          image="https://i.ibb.co/mcxBSJX/download-1.png"
-          category={"React"}
-          description={`This is a bit sized project designed to showcase some intriguing animations done with React. It also uses modern features, such as the hook system. This project was made with the framer-motion library.`}
-          name="Ordering Menu"
-        />
-
-        <ProjectCard
-          tags={[
-            tags.react,
             tags.redux,
             tags.mongo,
             tags.express,
@@ -145,6 +126,24 @@ const PortfolioShowCase = () => {
           name="Contact Keeper"
         />
 
+        <ProjectCard
+          tags={[
+            tags.react,
+            tags.hooks,
+            tags.animations,
+            tags.css,
+            tags.js,
+            tags.framer,
+          ]}
+          links={{
+            github:
+              "https://github.com/rmc-softdev/Pizza-Joint-animation-showcase-",
+          }}
+          image="https://i.ibb.co/mcxBSJX/download-1.png"
+          category={"React"}
+          description={`This is a bit sized project designed to showcase some intriguing animations done with React. It also uses modern features, such as the hook system. This project was made with the framer-motion library.`}
+          name="Ordering Menu"
+        />
         <ProjectCard
           tags={[tags.js, tags.html, tags.css, tags.landingpage]}
           links={{

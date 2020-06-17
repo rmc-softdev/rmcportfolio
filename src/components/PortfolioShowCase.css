@@ -70,7 +70,7 @@
 }
 
 .MuiPaper-root.MuiCard-root.makeStyles-root-1.MuiPaper-elevation1.MuiPaper-rounded {
-  position: relative;
+  position: relative !important;
 }
 
 .MuiTypography-colorTextSecondary {
@@ -79,13 +79,12 @@
 
 .project__category {
   position: absolute;
-  z-index: 100;
+  z-index: 1000;
   color: #fff;
   padding: 8px;
   background-color: rgb(40, 44, 55);
-  right: 3px;
-  top: 16px;
-  transform: rotate(25deg);
+  right: 0px;
+  top: 0px;
   border-radius: 5px;
   font-size: 19px;
 }
