@@ -31,6 +31,8 @@ const PortfolioShowCase = () => {
     html: "HTML",
     context: "Context API",
     googlemaps: "Google Maps API",
+    mvc: "MVC",
+    localstorage: "Local Storage",
   };
 
   const showAllMain = () => {
@@ -63,12 +65,14 @@ const PortfolioShowCase = () => {
             tags.mongo,
             tags.express,
             tags.node,
+            tags.mvc,
             tags.context,
             tags.hooks,
             tags.css,
             tags.api,
             tags.fullapi,
             tags.googlemaps,
+            tags.localstorage,
             tags.js,
             tags.auth,
             tags.framer,

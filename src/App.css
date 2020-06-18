@@ -3,7 +3,9 @@
 /* Some resets */
 body {
   margin: 0px;
-  font-family: "Roboto Mono", "monospace", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", " !default";
+  color: rgb(32, 33, 36);
+  display: block;
+  font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
   box-sizing: border-box;
   background: #f9f9fb;
 }
