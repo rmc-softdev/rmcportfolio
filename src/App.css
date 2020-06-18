@@ -215,8 +215,11 @@ a {
     grid-template-columns: repeat(3, minmax(200px, 300px));
   }
   .icons {
-    position: relative;
-    margin-top: 35px;
+    position: relative !important;
+    margin-top: 85px !important;
+  }
+  .title {
+    margin-top: 0;
   }
 }
 
