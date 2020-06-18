@@ -198,14 +198,14 @@ const SkillsCard = () => {
                   whileHover="hover"
                   style={{ cursor: "pointer" }}
                 >
-                  SEO
+                  SEO, Rest API
                 </motion.p>
                 <motion.p
                   variants={listVariants}
                   whileHover="hover"
                   style={{ cursor: "pointer" }}
                 >
-                  MVC
+                  MVC, Gitflow
                 </motion.p>
               </div>
             </div>

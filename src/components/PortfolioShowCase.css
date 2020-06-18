@@ -19,7 +19,6 @@
 .portfolio__content__title {
   text-align: center;
   margin: 50px 0;
-  font-family: "Rubik", sans-serif;
   font-size: 30px;
 }
 
@@ -91,4 +90,17 @@
   top: 0px;
   border-radius: 5px;
   font-size: 19px;
+}
+
+@media only screen and (max-width: 1380px) {
+  .portfolio__container {
+    width: auto;
+  }
+  .portfolio__content__cards {
+    grid-template-columns: minmax(200px, 700px);
+    justify-content: center;
+  }
+  .dropdown {
+    top: 150px;
+  }
 }

@@ -218,7 +218,10 @@ a {
   }
   .icons {
     position: relative !important;
-    margin-top: 85px !important;
+    margin: 55px 0 !important;
+    top: 0;
+    left: 0;
+    justify-content: center;
   }
   .title {
     margin-top: 0;
