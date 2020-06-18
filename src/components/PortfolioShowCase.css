@@ -69,6 +69,10 @@
   flex-direction: column;
 }
 
+.MuiPaper-root {
+  position: relative !important;
+}
+
 .MuiPaper-root.MuiCard-root.makeStyles-root-1.MuiPaper-elevation1.MuiPaper-rounded {
   position: relative !important;
 }
