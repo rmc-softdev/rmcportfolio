@@ -142,6 +142,7 @@ const PortfolioShowCase = () => {
           links={{
             github:
               "https://github.com/rmc-softdev/Pizza-Joint-animation-showcase-",
+            demo: "https://pizza-joint-reactanimations.netlify.app",
           }}
           image="https://i.ibb.co/mcxBSJX/download-1.png"
           category={"React"}
@@ -282,6 +283,7 @@ const PortfolioShowCase = () => {
                 links={{
                   github:
                     "https://github.com/rmc-softdev/Pizza-Joint-animation-showcase-",
+                  demo: "https://pizza-joint-reactanimations.netlify.app",
                 }}
                 image="https://i.ibb.co/mcxBSJX/download-1.png"
                 category={"React"}

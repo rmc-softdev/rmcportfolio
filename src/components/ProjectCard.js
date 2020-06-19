@@ -8,6 +8,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const useStyles = makeStyles({
   root: {
@@ -47,49 +48,77 @@ const ProjectCard = ({ category, description, name, tags, links, image }) => {
           <ul>
             {links?.github && (
               <li>
-                <a
-                  href={links.github}
-                  target="_blank"
-                  style={{ color: "#fff" }}
+                <motion.div
+                  initial={{ scale: 1 }}
+                  whileTap={{ scale: 1.2, rotate: "-2deg" }}
                 >
                   {" "}
-                  View Code
-                </a>
+                  <a
+                    href={links.github}
+                    target="_blank"
+                    style={{ color: "#fff" }}
+                  >
+                    {" "}
+                    View Code
+                  </a>
+                </motion.div>
               </li>
             )}
 
             {links?.githubb && (
               <li>
-                <a
-                  href={links.github}
-                  target="_blank"
-                  style={{ color: "#fff" }}
+                <motion.div
+                  initial={{ scale: 1 }}
+                  whileTap={{ scale: 1.2, rotate: "-2deg" }}
                 >
                   {" "}
-                  Github (backend)
-                </a>
+                  <a
+                    href={links.githubb}
+                    target="_blank"
+                    style={{ color: "#fff" }}
+                  >
+                    {" "}
+                    Github (backend)
+                  </a>
+                </motion.div>
               </li>
             )}
 
             {links?.githubf && (
               <li>
-                <a
-                  href={links.github}
-                  target="_blank"
-                  style={{ color: "#fff" }}
+                <motion.div
+                  initial={{ scale: 1 }}
+                  whileTap={{ scale: 1.2, rotate: "-2deg" }}
                 >
                   {" "}
-                  Github (frontend)
-                </a>
+                  <a
+                    href={links.githubf}
+                    target="_blank"
+                    style={{ color: "#fff" }}
+                  >
+                    {" "}
+                    Github (frontend)
+                  </a>
+                </motion.div>
               </li>
             )}
 
             {links?.demo && (
               <li>
-                <a href={links.demo} target="_blank" style={{ color: "#fff" }}>
+                <motion.div
+                  initial={{ scale: 1 }}
+                  whileTap={{ scale: 1.2, rotate: "-2deg" }}
+                >
                   {" "}
-                  View Demo
-                </a>
+                  <a
+                    href={links.demo}
+                    target="_blank"
+                    style={{ color: "#fff" }}
+                  >
+                    {" "}
+                    View Demo
+                  </a>
+                </motion.div>
               </li>
             )}
             {/* <li>View Explanation</li> */}
