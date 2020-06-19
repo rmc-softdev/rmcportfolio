@@ -21,7 +21,12 @@ const Icons3D = () => {
           </div>
           <div className="text">Github</div>
         </a>
-        <a href="#" style={{ margin: "0 25px" }}>
+        <a
+          href="https://drive.google.com/file/d/1Nw6nKHhXv6WAglBDLQhf--S2XpCyhdI-/view?usp=sharing"
+          target="_blank"
+          style={{ margin: "0 25px" }}
+          rel="noopener noreferrer"
+        >
           <div className="layer">
             <span></span>
             <span></span>
