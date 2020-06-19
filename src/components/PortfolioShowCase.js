@@ -238,7 +238,7 @@ const PortfolioShowCase = () => {
                 links={{
                   githubf: "https://github.com/rmc-softdev/RealEstateFrontend",
                   githubb: "https://github.com/rmc-softdev/RealEstateBackend",
-                  demo: "https://mern-in-a-nutshell.web.app/",
+                  demo: "https://snug-homes.web.app/",
                 }}
                 image="https://i.ibb.co/yhhpZFP/download-2.png"
                 category={"Fullstack"}

@@ -65,7 +65,6 @@ a {
   background-color: rgb(105, 49, 225);
   box-sizing: border-box;
   color: rgb(42, 42, 51);
-  font-family: "Open Sans", Gotham, gotham, Tahoma, Geneva, sans-serif;
   font-size: 15px;
   height: 2px;
   line-height: 22.5px;
@@ -131,9 +130,9 @@ a {
 }
 
 .title {
-  font-family: "Rubik", sans-serif;
   font-size: 25px;
   margin-top: 50px;
+  margin-bottom: 3px;
 }
 
 .showcase__content__infos h5 {
@@ -242,7 +241,10 @@ a {
     grid-template-columns: 300px;
   }
   .icons {
-    position: relative;
-    margin-top: 35px;
+    position: relative !important;
+    margin: 55px 0 !important;
+    top: 0;
+    left: 0;
+    justify-content: center;
   }
 }

@@ -148,7 +148,7 @@ const SkillsCard = () => {
                   whileHover="hover"
                   style={{ cursor: "pointer" }}
                 >
-                  REST API
+                  RESTFUL API
                 </motion.p>
                 <motion.p
                   variants={listVariants}
@@ -175,6 +175,14 @@ const SkillsCard = () => {
                 >
                   Hooks
                 </motion.p>
+
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
+                  style={{ cursor: "pointer" }}
+                >
+                  Restful API
+                </motion.p>
                 <motion.p
                   variants={listVariants}
                   whileHover="hover"
@@ -185,27 +193,20 @@ const SkillsCard = () => {
                 <motion.p
                   variants={listVariants}
                   whileHover="hover"
+                  style={{ cursor: "pointer" }}
+                >
+                  MVC, SEO, Gitflow
+                </motion.p>
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
                   style={{
                     cursor: "pointer",
                     display: "flex",
                     flexDirection: "column",
                   }}
                 >
-                  <span>Pixel Perfect CSS skills</span>
-                </motion.p>
-                <motion.p
-                  variants={listVariants}
-                  whileHover="hover"
-                  style={{ cursor: "pointer" }}
-                >
-                  SEO, Rest API
-                </motion.p>
-                <motion.p
-                  variants={listVariants}
-                  whileHover="hover"
-                  style={{ cursor: "pointer" }}
-                >
-                  MVC, Gitflow
+                  <span> Pixel Perfect CSS</span>
                 </motion.p>
               </div>
             </div>

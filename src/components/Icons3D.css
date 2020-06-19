@@ -113,3 +113,23 @@
   bottom: -23px;
   opacity: 1;
 }
+
+@media only screen and (max-width: 750px) {
+  .icons {
+    position: relative !important;
+    margin: 55px 0 !important;
+    top: 0;
+    left: 0;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .icons {
+    position: relative !important;
+    margin: 55px 0 !important;
+    top: 0;
+    left: 0;
+    justify-content: center;
+  }
+}

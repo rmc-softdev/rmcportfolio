@@ -108,7 +108,10 @@ const Home = () => {
             <Icons3D />
           </motion.div>
           <h4 className="title"> Rafael Marques</h4>
-          <h5 style={{ fontWeight: "500" }}> Software Developer</h5>
+          <h5 style={{ fontWeight: "500", margin: "4px 0" }}>
+            {" "}
+            Software Developer
+          </h5>
           {/* <div className="logo" style={{ top: "27px", right: "220px" }}>
             <Link to="/">
               <img src="https://i.ibb.co/tsLPThB/Logo-1-1.png" alt="" />
@@ -146,6 +149,7 @@ const Home = () => {
                   variants={svgVariants}
                   initial="initial"
                   animate="animate"
+                  style={{ marginLeft: "3px" }}
                 >
                   <motion.path
                     d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 18v-12l9 6-9 6z"
