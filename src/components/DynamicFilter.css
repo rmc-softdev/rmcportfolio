@@ -76,7 +76,7 @@ a {
 
 .dropdown {
   position: absolute;
-  top: 132px;
+  top: 152px;
   width: 200px;
   margin-top: 7px;
   background-color: var(--bg);
@@ -119,9 +119,11 @@ a {
   margin-left: auto;
 }
 
-.happy-face {
-  font-size: 30px;
-  margin-left: 10px;
+.shrugging {
+  width: 40px;
+  position: relative;
+  top: 10px;
+  left: 6px;
 }
 
 .react-love {

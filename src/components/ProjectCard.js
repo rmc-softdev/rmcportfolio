@@ -28,7 +28,7 @@ const ProjectCard = ({ category, description, name, tags, links, image }) => {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={image || "https://i.ibb.co/GswL4gn/index.png"}
+          image={image || "https://i.ibb.co/JrGhMjB/index.png"}
           title="Contemplative Reptile"
         />
         <CardContent>
@@ -57,6 +57,7 @@ const ProjectCard = ({ category, description, name, tags, links, image }) => {
                     href={links.github}
                     target="_blank"
                     style={{ color: "#fff" }}
+                    rel="noopener noreferrer"
                   >
                     {" "}
                     View Code
@@ -76,6 +77,7 @@ const ProjectCard = ({ category, description, name, tags, links, image }) => {
                     href={links.githubb}
                     target="_blank"
                     style={{ color: "#fff" }}
+                    rel="noopener noreferrer"
                   >
                     {" "}
                     Github (backend)
@@ -95,6 +97,7 @@ const ProjectCard = ({ category, description, name, tags, links, image }) => {
                     href={links.githubf}
                     target="_blank"
                     style={{ color: "#fff" }}
+                    rel="noopener noreferrer"
                   >
                     {" "}
                     Github (frontend)
@@ -114,6 +117,7 @@ const ProjectCard = ({ category, description, name, tags, links, image }) => {
                     href={links.demo}
                     target="_blank"
                     style={{ color: "#fff" }}
+                    rel="noopener noreferrer"
                   >
                     {" "}
                     View Demo

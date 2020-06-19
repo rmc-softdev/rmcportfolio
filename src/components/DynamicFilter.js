@@ -85,6 +85,7 @@ const DynamicFilter = (props) => {
           color: "#202124",
           lineHeight: "23px",
           marginTop: "17px",
+          textAlign: "center",
         }}
       >
         {" "}
@@ -95,15 +96,16 @@ const DynamicFilter = (props) => {
           fontFamily: "roboto,Noto Sans Myanmar UI,arial,sans-serif",
           color: "#202124",
           lineHeight: "23px",
-          marginTop: "17px",
         }}
         className="react-love"
       >
         {" "}
         How could one not love React?
-        <span role="img" aria-label="happy-face" className="happy-face">
-          🤷🏻‍♀️
-        </span>
+        <img
+          src="https://i.ibb.co/NZx13Q8/output-onlineunicodetools.png"
+          alt="shrugging emoji"
+          className="shrugging"
+        ></img>
       </h4>
       <Navbar>
         <NavItem

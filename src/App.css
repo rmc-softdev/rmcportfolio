@@ -248,3 +248,21 @@ a {
     justify-content: center;
   }
 }
+
+@media only screen and (max-width: 578px) {
+  .dropdown {
+    top: 175px !important;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .showcase__content__infos {
+    max-width: 300px;
+  }
+  .icons {
+    flex-wrap: wrap;
+  }
+  .icons a {
+    margin: 15px !important;
+  }
+}

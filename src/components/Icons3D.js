@@ -6,7 +6,12 @@ const Icons3D = () => {
   return (
     <>
       <div className="icons">
-        <a href="https://github.com/rmc-softdev/" target="_blank">
+        <a
+          href="https://github.com/rmc-softdev/"
+          target="_blank"
+          style={{ margin: "0 25px" }}
+          rel="noopener noreferrer"
+        >
           <div className="layer">
             <span></span>
             <span></span>
@@ -16,7 +21,7 @@ const Icons3D = () => {
           </div>
           <div className="text">Github</div>
         </a>
-        <a href="#">
+        <a href="#" style={{ margin: "0 25px" }}>
           <div className="layer">
             <span></span>
             <span></span>
@@ -29,6 +34,8 @@ const Icons3D = () => {
         <a
           href="https://www.linkedin.com/in/rafael-marques-b273461ab/"
           target="_blank"
+          style={{ margin: "0 25px" }}
+          rel="noopener noreferrer"
         >
           <div className="layer">
             <span></span>
@@ -39,7 +46,7 @@ const Icons3D = () => {
           </div>
           <div className="text">Linkedin</div>
         </a>
-        <a style={{ cursor: "pointer" }}>
+        <a style={{ cursor: "pointer", margin: "0 25px" }}>
           <div className="layer">
             <span></span>
             <span></span>

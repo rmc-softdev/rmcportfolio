@@ -100,7 +100,4 @@
     grid-template-columns: minmax(200px, 700px);
     justify-content: center;
   }
-  .dropdown {
-    top: 150px;
-  }
 }
