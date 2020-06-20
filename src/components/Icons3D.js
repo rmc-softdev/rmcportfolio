@@ -22,7 +22,7 @@ const Icons3D = () => {
           <div className="text">Github</div>
         </a>
         <a
-          href="https://drive.google.com/file/d/1Nw6nKHhXv6WAglBDLQhf--S2XpCyhdI-/view?usp=sharing"
+          href="https://drive.google.com/file/d/1LyXzYOamvv9IitZiYfYvs7JjM0no8dd_/view?usp=sharing"
           target="_blank"
           style={{ margin: "0 25px" }}
           rel="noopener noreferrer"
