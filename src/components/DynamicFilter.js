@@ -242,6 +242,9 @@ const DropdownMenu = (props) => {
           <DropdownItem name="Javascript" leftIcon={<JSIcon />}>
             Vanilla Javascript
           </DropdownItem>
+          <DropdownItem name="Menu" goToMenu="main" leftIcon={<BoltIcon />}>
+            Show All
+          </DropdownItem>
         </div>
       </CSSTransition>
     </motion.div>
