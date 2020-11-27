@@ -148,14 +148,14 @@ const SkillsCard = () => {
                   whileHover="hover"
                   style={{ cursor: "pointer" }}
                 >
-                  RESTFUL API
+                  Rest/GraphQL API
                 </motion.p>
                 <motion.p
                   variants={listVariants}
                   whileHover="hover"
                   style={{ cursor: "pointer" }}
                 >
-                  Authentication
+                  Docker/Kubernetes
                 </motion.p>
               </div>
             </div>

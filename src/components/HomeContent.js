@@ -1,9 +1,8 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import Icons3D from "./Icons3D";
-import Spinner from "../utils/Spinner";
 import ProfileImage from "./ProfileImage";
 
 const containerVariants = {
@@ -128,9 +127,7 @@ const Home = () => {
             Passionate problem solver, as a former physicist, building solutions
             to real world problems is in my nature. Love learning and getting up
             to date with the latest trends in the industry, always looking
-            foward to apply such technologies. Don't take my word for granted,
-            for I have learned a whole new library just to make the animations
-            you're seeing here possible with React.
+            foward to apply such technologies. Find out more with the above icons.
           </p>
           <motion.div
             style={{ width: "fit-content" }}

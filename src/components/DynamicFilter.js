@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { CSSTransition } from "react-transition-group";
-import { motion, useCycle, AnimatePresence } from "framer-motion";
+import { motion, useCycle} from "framer-motion";
 
 import "./DynamicFilter.css";
 import { ReactComponent as CaretIcon } from "./icons/caret.svg";
@@ -40,20 +40,20 @@ const svgVariants = {
   },
 };
 
-const pathVariants = {
-  initial: {
-    opacity: 0,
-    pathLength: 0,
-  },
-  animate: {
-    opacity: 1,
-    pathLength: 1,
-    transition: {
-      duration: 5,
-      ease: "easeInOut",
-    },
-  },
-};
+// const pathVariants = {
+//   initial: {
+//     opacity: 0,
+//     pathLength: 0,
+//   },
+//   animate: {
+//     opacity: 1,
+//     pathLength: 1,
+//     transition: {
+//       duration: 5,
+//       ease: "easeInOut",
+//     },
+//   },
+// };
 
 const containerVariants = {
   hidden: {

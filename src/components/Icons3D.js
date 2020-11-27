@@ -22,7 +22,7 @@ const Icons3D = () => {
           <div className="text">Github</div>
         </a>
         <a
-          href="https://drive.google.com/file/d/1LyXzYOamvv9IitZiYfYvs7JjM0no8dd_/view?usp=sharing"
+          href="https://drive.google.com/file/d/1HEadURMdOldO373-GJ-utDEnDbnNOqZE/view"
           target="_blank"
           style={{ margin: "0 25px" }}
           rel="noopener noreferrer"
@@ -51,7 +51,7 @@ const Icons3D = () => {
           </div>
           <div className="text">Linkedin</div>
         </a>
-        <a style={{ cursor: "pointer", margin: "0 25px" }}>
+        <a style={{ cursor: "pointer", margin: "0 25px" }} href={`mailto:rmcsoftdev@gmail.com`}>
           <div className="layer">
             <span></span>
             <span></span>

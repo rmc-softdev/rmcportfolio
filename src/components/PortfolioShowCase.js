@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 import DynamicFilter from "./DynamicFilter";
 import ProjectCard from "./ProjectCard";
@@ -54,7 +53,7 @@ const PortfolioShowCase = () => {
           }}
           image="https://i.ibb.co/JrGhMjB/index.png"
           category={"React"}
-          description={` This project features the most modern React techniques, such as code splitting (just recently introduced to React), Optional Chaining (ES2020!) and many more. It also It has a clean UI, which I took as inspiration from a very dear anime community app of mine, it was created to have a modern feel to it as well as to showcase some core Skills. As such, it displays intricate usage of third party API calls and quite non trivial techniques such as Higher Order Components, async Redux calls and many more.
+          description={` This project features the most modern React techniques, such as code splitting (just recently introduced to React), Optional Chaining (ES2020!) and many more. It also It has a clean UI, which I took as inspiration from a very dear anime community app of mine, it was created to have a modern feel to it as well as to showcase some core Skills. As such, it displays intricate usage of third party API calls and quite non trivial techniques such as Higher Order Components, async Redux calls and many more. Of course, it's far from perfect, its design pattern is very poor, too much requests and not enough mobile responsivenes, it would take too much time for a side project, still, quite interesting.
                 `}
           name="AniWorld"
         />
@@ -84,24 +83,11 @@ const PortfolioShowCase = () => {
           }}
           image="https://i.ibb.co/MGK2Jgv/landingpage.png"
           category={"Fullstack"}
-          description={` This is honestly my master project. The only reason why I didn't showcased it first is because you actually need to look at the code in order to appreciate it. This project is a true mountain in that regard, with tons and tons of reusable components, a clean and modern design pattern, it really took me quite some time and effort to build it. It has so many "hidden" features, such as error handling, both on the front end and the back end, as well as some nice security counter measures on the server side, that you actually need to sit and look carefuly at it to understand. ${
+          description={` This is honestly my master project, as far as a simple side project can be. The only reason why I didn't showcased it first is because you actually need to look at the code in order to appreciate it. This project is a true mountain in that regard, with tons and tons of reusable components, a clean and modern design pattern, it really took me quite some time and effort to build it. It has so many "hidden" features, such as error handling, both on the front end and the back end, as well as some nice security counter measures on the server side, that you actually need to sit and look carefuly at it to understand. ${
             /*It has customizable validation, customizable error handling, customizable hooks both on the front and the back end and so so much more that it's even hard to describe it here without being too prolix. The last thing I want to add is that from this app to a real world fully fledged Real Estate app there's only time left in the way. */ ""
           } 
                 `}
           name="Snug Homes"
-        />
-
-        <ProjectCard
-          tags={[tags.js, tags.api, tags.css, tags.html]}
-          links={{
-            github: "https://github.com/rmc-softdev/pokedex",
-            demo: "http://vanillajs-pokedex.surge.sh/",
-          }}
-          image="https://i.ibb.co/fps7TB3/download-2.png"
-          category={"Javascript"}
-          description={`This project could easily be labeled as a true "Higher Order Functions Extravaganza", with almost three hundred lines of vanilla JS, it was such a nice ride. I still remember how troublesome it was at the time to do this project, which is why it became quite dear to me, for it has taught me quite a lot. The design pattern is quite poor, simply because I was a junior at the time, but I still think the solutions I came about were quite ingenous honestly, specially because the API was pretty troublesome, I actually had to use two different APIs concurrently to make it work nicely and done.
-                `}
-          name="Dexmon"
         />
       </>
     );
@@ -149,6 +135,20 @@ const PortfolioShowCase = () => {
           description={`This is a bit sized project designed to showcase some intriguing animations done with React. It also uses modern features, such as the hook system. This project was made with the framer-motion library.`}
           name="Ordering Menu"
         />
+
+<ProjectCard
+          tags={[tags.js, tags.api, tags.css, tags.html]}
+          links={{
+            github: "https://github.com/rmc-softdev/pokedex",
+            demo: "http://vanillajs-pokedex.surge.sh/",
+          }}
+          image="https://i.ibb.co/fps7TB3/download-2.png"
+          category={"Javascript"}
+          description={`This project could easily be labeled as a true "Higher Order Functions Extravaganza", with almost three hundred lines of vanilla JS, it was such a nice ride. I still remember how troublesome it was at the time to do this project, which is why it became quite dear to me, for it has taught me quite a lot. The design pattern is quite poor, simply because I was a junior at the time, but I still think the solutions I came about were quite ingenous honestly, specially because the API was pretty troublesome, I actually had to use two different APIs concurrently to make it work nicely and done.
+                `}
+          name="Dexmon"
+        />
+
         <ProjectCard
           tags={[tags.js, tags.html, tags.css, tags.landingpage]}
           links={{
@@ -160,6 +160,8 @@ const PortfolioShowCase = () => {
           description={`This is a very simple clone, I thought it would be a nice addition to leave a trivial HTML/CSS/JS project here as well. Being a Netflix Clone, I quite liked the design, so I chose it to be displayed here, as I already have many technical projects exposed here.`}
           name="Netflix Clone"
         />
+
+
       </>
     );
   };
@@ -213,7 +215,7 @@ const PortfolioShowCase = () => {
                   demo: "https://aniworld.netlify.app",
                 }}
                 category={"React"}
-                description={` This project features the most modern React techniques, such as code splitting (just recently introduced to React), Optional Chaining (ES2020!) and many more. It also It has a clean UI, which I took as inspiration from a very dear anime community app I subscribe, it was created to have a modern feel to it as well as to showcase some core React skills. As such, it displays intricate usage of third party API calls and quite non trivial techniques such as Higher Order Components, async Redux calls and many more.
+                description={`This project features the most modern React techniques, such as code splitting (just recently introduced to React), Optional Chaining (ES2020!) and many more. It also It has a clean UI, which I took as inspiration from a very dear anime community app I subscribe, it was created to have a modern feel to it as well as to showcase some core React skills. As such, it displays intricate usage of third party API calls and quite non trivial techniques such as Higher Order Components, async Redux calls and many more. Of course, it's far from perfect, its design pattern is very poor, too much requests and not enough mobile responsivenes, it would take too much time for a side project, still, quite interesting.
                 `}
                 name="AniWorld"
                 image="https://i.ibb.co/JrGhMjB/index.png"
