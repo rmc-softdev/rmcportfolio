@@ -53,7 +53,7 @@ const PortfolioShowCase = () => {
           }}
           image="https://i.ibb.co/JrGhMjB/index.png"
           category={"React"}
-          description={` This project features the most modern React techniques, such as code splitting (just recently introduced to React), Optional Chaining (ES2020!) and many more. It also It has a clean UI, which I took as inspiration from a very dear anime community app of mine, it was created to have a modern feel to it as well as to showcase some core Skills. As such, it displays intricate usage of third party API calls and quite non trivial techniques such as Higher Order Components, async Redux calls and many more. Of course, it's far from perfect, its design pattern is very poor, too much requests and not enough mobile responsivenes, it would take too much time for a side project, still, quite interesting.
+          description={` This project features the most modern React techniques, such as code splitting (just recently introduced to React), Optional Chaining (ES2020!) and many more. It also It has a clean UI, which I took as inspiration from a very dear anime community app of mine (I didn't made it fully responsive because it would just take too long), it was created to have a modern feel to it as well as to showcase some core Skills. As such, it displays intricate usage of third party API calls and quite non trivial techniques such as Higher Order Components, async Redux calls and many more. Of course, it's far from perfect, its design pattern is very poor, too much requests and not enough mobile responsivenes, it would take too much time for a side project, still, quite interesting.
                 `}
           name="AniWorld"
         />
@@ -79,11 +79,11 @@ const PortfolioShowCase = () => {
           links={{
             githubf: "https://github.com/rmc-softdev/RealEstateFrontend",
             githubb: "https://github.com/rmc-softdev/RealEstateBackend",
-            demo: "https://mern-in-a-nutshell.web.app/",
+            demo: "https://snug-homes.web.app/",
           }}
           image="https://i.ibb.co/MGK2Jgv/landingpage.png"
           category={"Fullstack"}
-          description={` This is honestly my master project, as far as a simple side project can be. The only reason why I didn't showcased it first is because you actually need to look at the code in order to appreciate it. This project is a true mountain in that regard, with tons and tons of reusable components, a clean and modern design pattern, it really took me quite some time and effort to build it. It has so many "hidden" features, such as error handling, both on the front end and the back end, as well as some nice security counter measures on the server side, that you actually need to sit and look carefuly at it to understand. ${
+          description={` This is honestly my master project, as far as a simple side project can be (it has tons of small issues one is surely too busy to keep tracking on). The only reason why I didn't showcased it first is because you actually need to look at the code in order to appreciate it. This project is a true mountain in that regard, with tons and tons of reusable components, a clean and modern design pattern, it really took me quite some time and effort to build it. It has so many "hidden" features, such as error handling, both on the front end and the back end, as well as some nice security counter measures on the server side, that you actually need to sit and look carefuly at it to understand. ${
             /*It has customizable validation, customizable error handling, customizable hooks both on the front and the back end and so so much more that it's even hard to describe it here without being too prolix. The last thing I want to add is that from this app to a real world fully fledged Real Estate app there's only time left in the way. */ ""
           } 
                 `}
@@ -215,7 +215,7 @@ const PortfolioShowCase = () => {
                   demo: "https://aniworld.netlify.app",
                 }}
                 category={"React"}
-                description={`This project features the most modern React techniques, such as code splitting (just recently introduced to React), Optional Chaining (ES2020!) and many more. It also It has a clean UI, which I took as inspiration from a very dear anime community app I subscribe, it was created to have a modern feel to it as well as to showcase some core React skills. As such, it displays intricate usage of third party API calls and quite non trivial techniques such as Higher Order Components, async Redux calls and many more. Of course, it's far from perfect, its design pattern is very poor, too much requests and not enough mobile responsivenes, it would take too much time for a side project, still, quite interesting.
+                description={`This project features the most modern React techniques, such as code splitting (just recently introduced to React), Optional Chaining (ES2020!) and many more. It also It has a clean UI (I didn't made it fully responsive because it would just take too long), which I took as inspiration from a very dear anime community app I subscribe, it was created to have a modern feel to it as well as to showcase some core React skills. As such, it displays intricate usage of third party API calls and quite non trivial techniques such as Higher Order Components, async Redux calls and many more. Of course, it's far from perfect, its design pattern is very poor, too much requests and not enough mobile responsivenes, it would take too much time for a side project, still, quite interesting.
                 `}
                 name="AniWorld"
                 image="https://i.ibb.co/JrGhMjB/index.png"
@@ -246,7 +246,7 @@ const PortfolioShowCase = () => {
                 }}
                 image="https://i.ibb.co/MGK2Jgv/landingpage.png"
                 category={"Fullstack"}
-                description={` This is honestly my master project. The only reason why I didn't showcased it first is because you actually need to look at the code in order to appreciate it. This project is a true mountain in that regard, with tons and tons of reusable components, a clean and modern design pattern, it really took me quite some time and effort to build it. It has so many "hidden" features, such as error handling, both on the front end and the back end, as well as some nice security counter measures on the server side, that you actually need to sit and look carefuly at it to understand. ${
+                description={` This is honestly my master project, as far as a side project can be (it has tons of small issues one is surely too busy to keep tracking on). The only reason why I didn't showcased it first is because you actually need to look at the code in order to appreciate it. This project is a true mountain in that regard, with tons and tons of reusable components, a clean and modern design pattern, it really took me quite some time and effort to build it. It has so many "hidden" features, such as error handling, both on the front end and the back end, as well as some nice security counter measures on the server side, that you actually need to sit and look carefuly at it to understand. ${
                   /*It has customizable validation, customizable error handling, customizable hooks both on the front and the back end and so so much more that it's even hard to describe it here without being too prolix. The last thing I want to add is that from this app to a real world fully fledged Real Estate app there's only time left in the way. */ ""
                 } 
                   `}

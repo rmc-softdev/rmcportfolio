@@ -1,6 +1,7 @@
 .portfolio__container {
   width: 1400px;
   margin: 0 auto;
+  margin-bottom: 64px;
 }
 
 .portfolio__filter {

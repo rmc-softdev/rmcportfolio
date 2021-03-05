@@ -88,6 +88,20 @@ const SkillsCard = () => {
                   whileHover="hover"
                   style={{ cursor: "pointer" }}
                 >
+                  Typescript
+                </motion.p>
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
+                  style={{ cursor: "pointer" }}
+                >
+                  Testing
+                </motion.p>
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
+                  style={{ cursor: "pointer" }}
+                >
                   {" "}
                   Redux
                 </motion.p>
@@ -96,21 +110,7 @@ const SkillsCard = () => {
                   whileHover="hover"
                   style={{ cursor: "pointer" }}
                 >
-                  Javascript
-                </motion.p>
-                <motion.p
-                  variants={listVariants}
-                  whileHover="hover"
-                  style={{ cursor: "pointer" }}
-                >
-                  SASS
-                </motion.p>
-                <motion.p
-                  variants={listVariants}
-                  whileHover="hover"
-                  style={{ cursor: "pointer" }}
-                >
-                  HTML/CSS
+                  HTML/CSS/JS
                 </motion.p>
               </div>
             </div>
@@ -127,14 +127,14 @@ const SkillsCard = () => {
                   whileHover="hover"
                   style={{ cursor: "pointer" }}
                 >
-                  Node JS
+                  Node.js
                 </motion.p>
                 <motion.p
                   variants={listVariants}
                   whileHover="hover"
                   style={{ cursor: "pointer" }}
                 >
-                  MongoDB
+                  MongoDB/PostgreSQL
                 </motion.p>
                 <motion.p
                   variants={listVariants}
@@ -155,7 +155,7 @@ const SkillsCard = () => {
                   whileHover="hover"
                   style={{ cursor: "pointer" }}
                 >
-                  Docker/Kubernetes
+                  Docker
                 </motion.p>
               </div>
             </div>
@@ -168,36 +168,8 @@ const SkillsCard = () => {
             </div>
             <div className="showcase__cards__card__tags">
               <div className="card__tags__content">
-                <motion.p
-                  variants={listVariants}
-                  whileHover="hover"
-                  style={{ cursor: "pointer" }}
-                >
-                  Hooks
-                </motion.p>
-
-                <motion.p
-                  variants={listVariants}
-                  whileHover="hover"
-                  style={{ cursor: "pointer" }}
-                >
-                  Restful API
-                </motion.p>
-                <motion.p
-                  variants={listVariants}
-                  whileHover="hover"
-                  style={{ cursor: "pointer" }}
-                >
-                  Context API
-                </motion.p>
-                <motion.p
-                  variants={listVariants}
-                  whileHover="hover"
-                  style={{ cursor: "pointer" }}
-                >
-                  MVC, SEO, Gitflow
-                </motion.p>
-                <motion.p
+               
+              <motion.p
                   variants={listVariants}
                   whileHover="hover"
                   style={{
@@ -207,6 +179,37 @@ const SkillsCard = () => {
                   }}
                 >
                   <span> Pixel Perfect CSS</span>
+                </motion.p>
+                
+               
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
+                  style={{ cursor: "pointer" }}
+                >
+                  NextJS
+                </motion.p>
+
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
+                  style={{ cursor: "pointer" }}
+                >
+                  CI/CD
+                </motion.p>
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
+                  style={{ cursor: "pointer" }}
+                >
+                  Hooks
+                </motion.p>
+                <motion.p
+                  variants={listVariants}
+                  whileHover="hover"
+                  style={{ cursor: "pointer" }}
+                >
+                  SEO & perfomance
                 </motion.p>
               </div>
             </div>

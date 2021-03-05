@@ -124,10 +124,7 @@ const Home = () => {
               fontWeight: "700",
             }}
           >
-            Passionate problem solver, as a former physicist, building solutions
-            to real world problems is in my nature. Love learning and getting up
-            to date with the latest trends in the industry, always looking
-            foward to apply such technologies. Find out more with the above icons.
+           Over six years of experience architecting, developing and implementing web applications. Main interests are working with challenging and scalable projects. Always eager and self-motivated to explore new technologies, applications, and agile environments.
           </p>
           <motion.div
             style={{ width: "fit-content" }}
