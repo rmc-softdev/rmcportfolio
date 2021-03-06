@@ -106,6 +106,7 @@ const DynamicFilter = (props) => {
           alt="shrugging emoji"
           className="shrugging"
         ></img>
+        
       </h4>
       <Navbar>
         <NavItem
